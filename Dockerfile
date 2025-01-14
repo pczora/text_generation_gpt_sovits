@@ -1,4 +1,4 @@
-ARG DOCKER_FROM=docker.io/pczora/text-generation-base:0.0.1
+ARG DOCKER_FROM=docker.io/pczora/text-generation-base:0.0.1_v0.13
 
 # Base NVidia CUDA Ubuntu image
 FROM $DOCKER_FROM AS base
@@ -32,4 +32,5 @@ WORKDIR /
 COPY --chmod=755 start-with-ui.sh /start-with-ui.sh
 COPY --chmod=755 start.sh /start.sh
 COPY --chmod=755 start-gpt-sovits.sh /start-gpt-sovits.sh
+WORKDIR /workspace
 CMD [ "/start.sh" ]
