@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/start-styletts2.sh &
+/start-with-ui.sh &
 /start-gpt-sovits.sh &
 
 # Wait for any process to exit
