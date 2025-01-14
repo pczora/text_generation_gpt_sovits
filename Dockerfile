@@ -29,7 +29,7 @@ RUN git clone $GPT_SOVITS_REPO_URL && \
     deactivate
 
 WORKDIR /
-COPY --chmod=755 start-with-ui.sh /start-with-ui.sh
+COPY --chmod=755 start-styletts2.sh /start-styletts2.sh
 COPY --chmod=755 start.sh /start.sh
 COPY --chmod=755 start-gpt-sovits.sh /start-gpt-sovits.sh
 CMD [ "/start.sh" ]
