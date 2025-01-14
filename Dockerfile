@@ -1,4 +1,4 @@
-ARG DOCKER_FROM=docker.io/pczora/text-generation-base:0.0.1
+ARG DOCKER_FROM=docker.io/pczora/text-generation-base:0.0.1_v1.13
 
 # Base NVidia CUDA Ubuntu image
 FROM $DOCKER_FROM AS base
